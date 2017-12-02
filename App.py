@@ -23,9 +23,9 @@ def main():
         for linha in cursor.fetchall():
             print(linha)
         #atualizar dados
-        cursor.execute("UPDATE TB_Animais SET Nome = %s WHERE Id = %s", ("garfield o gato", 2))
+        cursor.execute("UPDATE TB_Animais SET Nome = %s WHERE Id = %d", ("garfield o gato", 2))
         #deletando valores da tabela
-        cursor.execute("DELETE FROM TB_Usuario WHERE Rg = %s", 23456789)
+        cursor.execute("DELETE FROM TB_Usuario WHERE Rg = %d", 23456789)
         cursor.close()
         conn.commit()
 
