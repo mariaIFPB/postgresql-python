@@ -5,7 +5,7 @@ def main():
 
     try:
         # conectando o banco de dados
-        conexao = "host = 'localhost', database = 'banco_py', user = 'postgres', password = '451000'"
+        conexao = "host='localhost' dbname='banco_py' user='postgres' password='451000'"
         conn = p.connect(conexao)
         cursor = conn.cursor()
         # criando tabelas
